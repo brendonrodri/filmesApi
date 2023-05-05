@@ -3,9 +3,30 @@ import styled from 'styled-components'
 
 export const HeaderStyle = styled.header`
     position: fixed;
-    background-color: white;
+    background-color: rgba(108, 122, 137 / 1) ;
+    backdrop-filter: blur(15px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width: 100%;
+    height:10vh;
+    
+    nav{
+       width:60%;
+    }
+    ul{
+        display:flex;
+        justify-content:space-between;
+        list-style:none;
+    }
+
+    a{
+        text-decoration:none;
+        color:white;
+        font-size:1.2rem;
+    }
 `
+
 
 export default function Header(){
     return(
