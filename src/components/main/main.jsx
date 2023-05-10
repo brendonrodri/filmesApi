@@ -19,7 +19,7 @@ export default function Main (){
 
     useEffect(() => {
         getFilmes()
-    }, [])
+    })
 
     const getFilmes = async () => {
         await axios.get('https://api.themoviedb.org/3/movie/popular?api_key=34635a3c54d72514d08fd6979b14e222&language=pt-Br&page=1').then(resposta => {

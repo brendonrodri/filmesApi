@@ -29,10 +29,12 @@ import Series from "./components/series/series" */
 } */
 
 import React from "react"
+import CarouselComponent from "./components/carousel/carousel"
 import Filmes from "./components/filmes/filmes"
 import Footer from "./components/footer/footer"
 import Header from "./components/header/header"
 import Main from "./components/main/main"
+import NavComponent from "./components/NavBar/navbar"
 import Series from "./components/series/series"
 
 export default function App (){
@@ -41,6 +43,8 @@ export default function App (){
       <Header />
       <Main />
       <Filmes />
+      <NavComponent />
+      <CarouselComponent />
       <Series />
       <Footer />
     </>
