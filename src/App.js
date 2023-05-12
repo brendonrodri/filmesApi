@@ -36,17 +36,26 @@ import Header from "./components/header/header"
 import Main from "./components/main/main"
 import NavComponent from "./components/NavBar/navbar"
 import Series from "./components/series/series"
+import { createGlobalStyle } from "styled-components"
 
-export default function App (){
-  return(
+const GlobalStyle = createGlobalStyle`
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+`
+
+export default function App() {
+  return (
     <>
       <Header />
       <Main />
-      <Filmes />
-      <NavComponent />
       <CarouselComponent />
-      <Series />
-      <Footer />
+      <NavComponent />
+      <Filmes />
+      <GlobalStyle />
     </>
   )
 }
